@@ -58,7 +58,6 @@ let inviteCodes = [];
   }
   let slee = Math.floor(Math.random() * 9000) 
   let time = new Date()
-  console.log(time.getHours()); //获取当前小时数(0-23)
   if (time.getHours()>13){
     console.log(`\n****当前不在执行时间段---执行时间段[2,4,6,8,10,12]****\n防止脚本执行太频繁`);
     exit();
