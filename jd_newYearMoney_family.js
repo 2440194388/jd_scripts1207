@@ -57,11 +57,11 @@ let inviteCodes = [];
     return;
   }
   let slee = Math.floor(Math.random() * 9000) 
-  #let time = new Date()
-  #if (time.getHours()>13){
-  #  console.log(`\n****当前不在执行时间段---执行时间段[2,4,6,8,10,12]****\n防止脚本执行太频繁`);
-  #  exit();
-  #}
+  //let time = new Date()
+  //if (time.getHours()>13){
+  //  console.log(`\n****当前不在执行时间段---执行时间段[2,4,6,8,10,12]****\n防止脚本执行太频繁`);
+  //  exit();
+  //}
   console.log(`\n************随机延时${slee}毫秒************\n`);
   await $.wait(slee);
   await readShareCode()
